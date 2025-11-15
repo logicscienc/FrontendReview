@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mouse-main">
+        <h1>Cursor Animation On Mousemove</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim cum accusamus rem odio iusto aspernatur doloribus, cumque officiis. Molestiae eum vero dolores repellendus iure tempore magni neque esse explicabo.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, quae, iure distinctio reiciendis totam obcaecati iusto commodi hic necessitatibus accusamus voluptas voluptatibus libero temporibus delectus consectetur officiis expedita doloremque quas.</p>
+    </div>
+
+    <div class="mouse"></div>
+    <div class="mouse2"></div>
+
+    <script>
+        var mouse = document.querySelector(".mouse");
+        var mouse2 = document.querySelector(".mouse2");
+         document.addEventListener("mousemove", function (e) {
+      mouse.style.cssText = mouse2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px; ";
+    });
+    </script>
+</body>
+</html>
