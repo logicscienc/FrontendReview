@@ -89,7 +89,7 @@ console.log(course);
 // Arrow function: 
 
 
-// Re,oving elements from an array
+// Removing elements from an array
 
 // let numbers = [1,2,3,4,5,6,7];
 
@@ -107,6 +107,7 @@ let numbers = [1,2,3,4,5];
 let numbers2 = numbers; // so here the array of numbers string get into the numbers2 array by refrence.
 
 // now let's try to empty the array
+numbers.length = 0;
 numbers.splice(0,numbers.length);
 
 console.log(numbers);
@@ -115,17 +116,36 @@ console.log(numbers2);
 
 // combining two array
 
-let first = [1,2,3];
-let second = [4,5,6];
+// let first = [1,2,3];
+// let second = [4,5,6];
 
-let combined = first.concat(second);
-console.log(combined);
+// let combined = first.concat(second);
+// console.log(combined);
 
 
 // slice method
 
-let sliced = combined.slice(2,3);
-console.log(sliced);
+// let sliced = combined.slice(2,3);
+// console.log(sliced);
+
+// let marks = [10, 20,30,40,50,60,70,80];
+// let sliced2 = marks.slice(2, 6);
+// console.log(sliced2)
+
+
+// spread operator: used to combined arrays
+
+let first = [1,2,3];
+let second = [4,5,6];
+
+let combined = [...first, ...second]; //using this we can combine anything together.
+
+let combined2 = [...first, 'a', false, ...second, 'b', true];
+console.log(combined2);
+console.log(combined);
+
+// we can even create copy using this
+let another = [...combined];
 
 
 
