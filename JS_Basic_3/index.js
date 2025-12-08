@@ -23,11 +23,11 @@ lastName.length; //3
 
 //  Template Literals : Template literals are string litrals allowing embedded expressions. You can use multi-line strings and string interpolation features with them. in simple words using theis we can write our string in any format we want.
 
-let message =`Hello ${lastName},
-Thanks for the Opportunity
+// let message =`Hello ${lastName},
+// Thanks for the Opportunity
 
-Regards,
-Luv`;
+// Regards,
+// Luv`;
 
 console.log(message);
 
@@ -140,12 +140,83 @@ let second = [4,5,6];
 
 let combined = [...first, ...second]; //using this we can combine anything together.
 
-let combined2 = [...first, 'a', false, ...second, 'b', true];
-console.log(combined2);
-console.log(combined);
+// let combined2 = [...first, 'a', false, ...second, 'b', true];
+// console.log(combined2);
+// console.log(combined);
 
 // we can even create copy using this
-let another = [...combined];
+// let another = [...combined];
+
+
+// Iterating an array
+// using loop for-of, for-each
+
+
+let arr = [10,20,30,40,50];
+
+// for(let value of arr) {
+//     console.log(value);
+// }
+
+
+
+arr.forEach(function(number) {
+    console.log(number);
+}); 
+
+// now let's convert the above forEach into arrow function
+arr.forEach(numbers => console.log(numbers));
+
+
+// below code shows how we can join an array
+let numbers = [10,20,30,40,50];
+// const joined = numbers.join(',');
+
+console.log(joined);
+
+// below code shows how we can split any message or string.
+
+let message = 'This is my first message';
+
+let parts = message.split(' ');
+
+console.log(parts);
+
+let joined = parts.join('_');
+
+// shorting using sort method
+
+// let numbers = [40,30,10,20,50];
+
+// numbers.sort();
+
+// console.log(numbers);
+
+
+// Filtering Arrays: we need to use callback function with filter method to filter the array based on some condition.
+
+// let numbers = [1,2,-1,-4];
+
+// let filtered = numbers.filter(function(value) {
+//     return value >=0;
+// });
+
+// console.log(filtered);
+
+// now let's convert the above function into arrow function
+
+// let filtered2 = numbers.filter(value => value >=0);
+
+// console.log(filtered2);
+
+// Mapping Arrays: we can use map method to map the array into something else.
+
+let numbers = [7,8,9,10];
+
+
+
+
+
 
 
 

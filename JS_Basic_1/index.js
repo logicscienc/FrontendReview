@@ -98,5 +98,4 @@ else if(operator === "/"){
 }
 
 console.log("Result", result);
-console.log("Result", result);
-console.log("Result", result);
+
