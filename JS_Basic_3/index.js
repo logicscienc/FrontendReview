@@ -213,6 +213,21 @@ let joined = parts.join('_');
 
 let numbers = [7,8,9,10];
 
+// let items = numbers.map(function(value) {
+//     return 'student_no' + value;
+// })
+
+console.log(items);
+
+// mapping with objects: 
+
+let numbers = [1,2,-6,-9];
+let filtered = numbers.filter(value => value >= 0);
+
+let items = filtered.map(function(num) {
+    return {value:num};
+})
+
 
 
 
