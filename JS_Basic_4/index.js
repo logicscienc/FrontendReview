@@ -89,22 +89,66 @@ console.log(intrest(1000));  // r and t will take default valuse that is 5 and 1
 // Getter: access properties
 // Setter: change or manipulate properties
 
-let person = {
-    fName : 'Love',
-    lName: 'babbar',
+// let person = {
+//     fName : 'Love',
+//     lName: 'babbar',
 
-    get fullName(){
-        return `${person.fName} ${person.lName}`;
-    },
+//     get fullName(){
+//         return `${person.fName} ${person.lName}`;
+//     },
 
-    set fullName(value){
-        let parts = value.split(' ');
-        this.fName = parts[0];
-        this.lName = parts[1];
-    }
-};
+//     set fullName(value){
+//         let parts = value.split(' ');
+//         this.fName = parts[0];
+//         this.lName = parts[1];
+//     }
+// };
 
-console.log(person.fullName); //Getter called
+// console.log(person.fullName); //Getter called
 
-person.fullName = 'Dhananjay Kumar' //Setter called
+// person.fullName = 'Dhananjay Kumar' //Setter called
+
+
+
+// try and catch block: It is used to handle errors gracefully in JavaScript. The code inside the try block is executed and if any error occurs, It is caught by the catch block where we can handele the error appropriately without crashing the program.
+// let person = {
+//     fName : 'Love',
+//     lName: 'babbar',
+
+//     get fullName(){
+//         return `${person.fName} ${person.lName}`;
+//     },
+
+//     set fullName(value){
+//         if(typeof value !== String) {
+//             throw new Error("You have not send a string");
+//         }
+//         let parts = value.split(' ');
+//         this.fName = parts[0];
+//         this.lName = parts[1];
+//     }
+// };
+
+
+// try{
+//       person.fullName = '1';
+// }
+// catch(error){
+//     alert(error)
+// }
+
+
+// ********************* Reducing an Array ************************
+let arr = [1,2,3,4];
+// let total = 0;
+
+// for(let value of arr) 
+//     total = total + value;
+// console.log(total);
+
+let totalSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+console.log("PRINTING TOTAL SUM: ")
+console.log(totalSum);
+
 
