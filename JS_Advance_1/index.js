@@ -37,5 +37,75 @@ codingEx.innerText    // this will also give the same output as textContent. but
 
 // ***********************Adding new element/context *****************************
 
-// if we want to add any new tag in the previous existing code then we can use 
+// if we want to add any new tag in the previous existing code then we can use append method. for example if we want to add a new paragraph in the code example whole class name is paraClass. 
+
+ let content = document.querySelector('.paraClass');
+
+ content;
+
+//  now we want to add new paragraph in the paraClass class. so we will do like.
+let newPara = document.createElement('p');
+
+newPara;
+
+content.appendChild(newPara);
+
+content;  // now at the end we can even see the para tag.
+
+
+
+// ************************insertAdjacentHTML()********************************
+
+// this method helps to add any tag with some text other then only at the end. we just need two things first is the position where we want to add the new tag and second is the new tag with text.
+
+// positions are: before begin, afterbegin, beforeend and afterend.
+
+// now let me show you the actual position with the help of an example. <p>
+//       <div>    </div>
+//       </p>
+// beforebegin: it will add the new tag before the p tag.
+// afterbegin: it will add the new tag just after the opening of p tag.
+// beforeend: it will add the new tag just before the closing of p tag.
+// afterend: it will add the new tag just after the closing of o tag.
+
+let content2 = $0;  
+content2;
+
+
+
+let newText = document.createElement('h3');
+
+newText.textContent = 'ABCD';
+
+content2.insertAdjacentElement('beforeBegin', newText);
+
+
+// Remove: removeChild(): opposite of appendChild(). a parent element and the child element to remove.
+
+
+content2;  //now if we want to remove the h3 tag which we added recently then we will do like this.
+
+let childElement = document.querySelector('.tempText'); // here tempText is a class anme.
+childElement;
+
+content2.removeChild(childElement);
+
+content2; //now we can see h3 tag is removed.
+
+
+
+// ******************************styling using js************************************
+
+let style = $0;
+
+style;
+
+style.style.color = 'red';
+
+style.style.backgroundColor = 'white';
+
+style.style.csstext = 'color:green; background-color:yellow; font-size:4rem;'; 
+
+// setAttribute: it is used to set any attribute of any element. for example if we want to set the class name of any element then we can use setAttribute method.
+
 
