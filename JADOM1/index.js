@@ -16,22 +16,22 @@ document.querySelector("text-textpara");
 let codingEx = document.querySelector('.code-example');
 
 // now let's try to print codingEx
-codingEx;
+// codingEx
 
 // now let's see the HTML content of this element. 
 // innerHTML: whenever we use innerHTML property after adding any new tag inside the text then it will render that tag .
 
-codingEx.innerHTML
+// codingEx.innerHTML
 
 // now as i told above we can even set the HTML of the element. so let's try to empty the HTML. 
 
-codingEx.innerHTML = ''   //
+// codingEx.innerHTML = ''   //
 
 
-codingEx.textContent   // the output will be like this 'Toggles <h1> Dark </h1>' this basicely shows the content which is inside that element whose class name is code-example. if we want to get the text only without the HTML tags then we can use textContent property. whenever we use innerHTML property after adding any new tag inside the text then it will treat it as text .
+// codingEx.textContent   // the output will be like this 'Toggles <h1> Dark </h1>' this basicely shows the content which is inside that element whose class name is code-example. if we want to get the text only without the HTML tags then we can use textContent property. whenever we use innerHTML property after adding any new tag inside the text then it will treat it as text .
 
 
-codingEx.innerText    // this will also give the same output as textContent. but the difference is that innerText will consider the styling of the element. for example if we have display none property in css then innerText will not fetch that text but textContent will fetch that text.
+// codingEx.innerText    // this will also give the same output as textContent. but the difference is that innerText will consider the styling of the element. for example if we have display none property in css then innerText will not fetch that text but textContent will fetch that text.
 
 
 
@@ -39,18 +39,18 @@ codingEx.innerText    // this will also give the same output as textContent. but
 
 // if we want to add any new tag in the previous existing code then we can use append method. for example if we want to add a new paragraph in the code example whole class name is paraClass. 
 
- let content = document.querySelector('.paraClass');
+//  let content = document.querySelector('.paraClass');
 
- content;
+//  content;
 
 //  now we want to add new paragraph in the paraClass class. so we will do like.
-let newPara = document.createElement('p');
+// let newPara = document.createElement('p');
 
-newPara;
+// newPara;
 
-content.appendChild(newPara);
+// content.appendChild(newPara);
 
-content;  // now at the end we can even see the para tag.
+// content;  // now at the end we can even see the para tag.
 
 
 
@@ -68,44 +68,45 @@ content;  // now at the end we can even see the para tag.
 // beforeend: it will add the new tag just before the closing of p tag.
 // afterend: it will add the new tag just after the closing of o tag.
 
-let content2 = $0;  
-content2;
+// let content2 = $0;  
+// content2;
 
 
 
-let newText = document.createElement('h3');
+// let newText = document.createElement('h3');
 
-newText.textContent = 'ABCD';
+// newText.textContent = 'ABCD';
 
-content2.insertAdjacentElement('beforeBegin', newText);
+// content2.insertAdjacentElement('beforeBegin', newText);
 
 
 // Remove: removeChild(): opposite of appendChild(). a parent element and the child element to remove.
 
 
-content2;  //now if we want to remove the h3 tag which we added recently then we will do like this.
+// content2;  //now if we want to remove the h3 tag which we added recently then we will do like this.
 
 let childElement = document.querySelector('.tempText'); // here tempText is a class anme.
-childElement;
+// childElement;
 
-content2.removeChild(childElement);
+// content2.removeChild(childElement);
 
-content2; //now we can see h3 tag is removed.
+// content2; //now we can see h3 tag is removed.
 
 
 
 // ******************************styling using js************************************
 
-let style = $0;
+// let style = $0;
 
-style;
+// style;
 
-style.style.color = 'red';
+// style.style.color = 'red';
 
-style.style.backgroundColor = 'white';
+// style.style.backgroundColor = 'white';
 
-style.style.csstext = 'color:green; background-color:yellow; font-size:4rem;'; 
+// style.style.csstext = 'color:green; background-color:yellow; font-size:4rem;'; 
 
 // setAttribute: it is used to set any attribute of any element. for example if we want to set the class name of any element then we can use setAttribute method.
+
 
 
