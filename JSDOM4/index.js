@@ -98,4 +98,65 @@
 
 
 
+// *****************************************FETCH API*****************************************************
+
+// get request using fetch
+
+// let obj = {
+//     heading: "head"
+// };
+
+// async function utility(){
+//     let content = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+
+//     console.log(content);
+// }
+// utility();
+
+
+// post request using fetch
+
+// async function helper(){
+//     let options = {
+//        method: 'POST',
+//        body: JSON.stringify({
+//         title: 'foo',
+//         body: 'bar',
+//         userId: 1,
+//        }),
+//        headers: {
+//         'Content-type': 'application/json; charset=UTF-8',
+//        },
+//     };
+
+//     let content = await fetch('https://jsonplaceholder.typicode.com/posts', options);
+//     let response = content.json();
+//     return response;
+// }
+
+// async function utility() {
+//     let ans = await helper();
+//     console.log(ans);
+// }
+
+// utility();
+
+
+// *****************************************CLOSURES**************************************************************
+
+// clousers: when we have nested function then it is closer and we use refrenses.
+
+
+function init() {
+    let name = 'Mozilla'; //name is a local variable created by init
+    function displayName() {
+        let name = "Babbar";
+     // displayName() is the inner function, that forms the closure.
+        console.log(name);  //use variable declared in the parent function.
+    }
+    displayName();
+}
+
+init();
+
 
